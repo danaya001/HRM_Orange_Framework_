@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         glue="ui_automation.step_definitions",
         tags="@smoke",
         dryRun = false,
-        monochrome = true
+        monochrome = false
 )
 
 public class UITestRunner {
