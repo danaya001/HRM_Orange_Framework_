@@ -1,0 +1,28 @@
+2023-10-06 23:34:07,821 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+2023-10-06 23:34:07,845 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\orkar\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+2023-10-06 23:34:09,047 [main] INFO ui_automation.utilities.FileUtility - Getting list of existing files in directory: C:\Users\orkar\IdeaProjects\YFrameworkFinalC12/src/test/resources/testData/Downloads
+[]
+2023-10-06 23:34:27,684 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+2023-10-06 23:34:27,711 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\orkar\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+2023-10-06 23:34:28,892 [main] INFO ui_automation.utilities.FileUtility - Getting list of existing files in directory: C:\Users\orkar\IdeaProjects\YFrameworkFinalC12/src/test/resources/testData/Downloads
+[]
+2023-10-06 23:34:43,907 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+2023-10-06 23:34:43,929 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\orkar\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+2023-10-06 23:34:45,104 [main] INFO ui_automation.utilities.FileUtility - Getting list of existing files in directory: C:\Users\orkar\IdeaProjects\YFrameworkFinalC12/src/test/resources/testData/Downloads
+[]
+2023-10-06 23:34:56,608 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+2023-10-06 23:34:56,631 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\orkar\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+2023-10-06 23:34:57,835 [main] INFO ui_automation.utilities.FileUtility - Getting list of existing files in directory: C:\Users\orkar\IdeaProjects\YFrameworkFinalC12/src/test/resources/testData/Downloads
+[]
+2023-10-06 23:35:07,592 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+2023-10-06 23:35:07,614 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\orkar\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+2023-10-06 23:35:08,799 [main] INFO ui_automation.utilities.FileUtility - Getting list of existing files in directory: C:\Users\orkar\IdeaProjects\YFrameworkFinalC12/src/test/resources/testData/Downloads
+[]
+2023-10-06 23:35:17,308 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+2023-10-06 23:35:17,328 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\orkar\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+2023-10-06 23:35:18,546 [main] INFO ui_automation.utilities.FileUtility - Getting list of existing files in directory: C:\Users\orkar\IdeaProjects\YFrameworkFinalC12/src/test/resources/testData/Downloads
+[]
+2023-10-06 23:35:26,139 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.149 (resolved driver for Chrome 117)
+2023-10-06 23:35:26,162 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\orkar\.cache\selenium\chromedriver\win64\117.0.5938.149\chromedriver.exe
+2023-10-06 23:35:27,369 [main] INFO ui_automation.utilities.FileUtility - Getting list of existing files in directory: C:\Users\orkar\IdeaProjects\YFrameworkFinalC12/src/test/resources/testData/Downloads
+[]
