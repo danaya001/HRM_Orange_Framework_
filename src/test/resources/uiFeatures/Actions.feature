@@ -19,7 +19,7 @@ Feature: This feature file validates Actions Functionality
   Scenario: User should be able to perform drag and drop action on DHTML Page
     Given user navigates to DHTML Page
     Then user drags "Washington" box and drops it to "United States" box on DHTML Page
-  @run
+  @run @smoke
   Scenario: User should be able to perform double click action on Practice Page
     Given user navigates to Practice Page
     Then user double clicks and verifies copied text on Practice Page
