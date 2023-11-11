@@ -1,6 +1,5 @@
 package ui_automation.step_definitions;
 
-
 import io.cucumber.core.api.Scenario;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -24,8 +23,8 @@ public class Hooks {
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        String directoryPath=System.getProperty("user.dir")+"/src/test/resources/testData/Downloads";
-        FileUtility.deleteFilesInDirectory(directoryPath);
+//        String directoryPath = System.getProperty("user.dir")+"/src/test/resources/testData/Downloads";
+//        FileUtility.deleteFilesInDirectory(directoryPath);
     }
 
     @After
@@ -34,7 +33,7 @@ public class Hooks {
             final byte[] screenshot = ((TakesScreenshot) Driver.getInstance().getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.embed(screenshot, "image/png");
         }
-       Driver.getInstance().removeDriver();
 
+       Driver.getInstance().removeDriver();
     }
 }

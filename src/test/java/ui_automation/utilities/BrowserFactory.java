@@ -29,7 +29,7 @@ public class BrowserFactory {
                         WebDriverManager.chromedriver().setup();
                         //chromePrefs is key value combination and useful if you change default behavior of browser like download directory
                         HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
-                        chromePrefs.put("download.default_directory", System.getProperty("user.dir")+"/src/test/resources/testData/Downloads");
+                        chromePrefs.put("download.default_directory", System.getProperty("user.dir")+"\\src\\test\\resources\\testData\\Downloads");
                         //chromeOptions are useful if you want to manage options specific to Chromediver - like ignoring certificate
                         ChromeOptions options = new ChromeOptions();
                         options.addArguments("--ignore-ssl-errors=yes");
@@ -54,7 +54,7 @@ public class BrowserFactory {
                                 chrOptions.addArguments("--ignore-certificate-errors");
                                 chrOptions.setExperimentalOption("prefs", chromePrefs);
                                 try {
-                                    driver = new RemoteWebDriver(new URL("http://54.166.134.32:4444/wd/hub"), chrOptions);
+                                    driver = new RemoteWebDriver(new URL("http://52.90.116.110:4444/wd/hub"), chrOptions);
                                 } catch (MalformedURLException e) {
                                     e.printStackTrace();
                                 }

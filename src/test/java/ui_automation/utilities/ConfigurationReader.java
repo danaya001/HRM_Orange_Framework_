@@ -18,5 +18,6 @@ public class ConfigurationReader {
         }catch (IOException e) {
             e.printStackTrace();
         }
-        return properties.getProperty(key); }
+        return properties.getProperty(key);
+    }
 }
