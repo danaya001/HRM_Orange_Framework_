@@ -23,7 +23,6 @@ Feature: This feature file validates Actions Functionality
   Scenario: User should be able to perform double click action on Practice Page
     Given user navigates to Practice Page
     Then user double clicks and verifies copied text on Practice Page
-
   @run
   Scenario: User should be able to perform keyboard action on Key Presses Page
     Given user navigates to Key Presses Page

@@ -10,7 +10,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import ui_automation.pages.MBExpensesPage;
 import ui_automation.utilities.*;
-
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
@@ -77,7 +76,7 @@ public class MBExpensesPageSteps {
         /* complete mandatory fields */
         mbExpensesPage.dateField.click();
         Thread.sleep(1000);
-        driver.findElement(By.xpath("(//*[@aria-label='"+todaysDate+"'])[3]")).click();
+        driver.findElement(By.xpath("(//*[@aria-label='" + todaysDate + "'])[3]")).click();
         mbExpensesPage.amountTextBox.sendKeys(String.valueOf(amount));
         mbExpensesPage.expenseNameTextBox.sendKeys(expenseName);
     }
@@ -113,10 +112,10 @@ public class MBExpensesPageSteps {
 
         /* establish the statement and execute the query */
         String query = "SELECT Name, Amount, BusinessPurpose, ProjectName from Expenses as expenses\n" +
-                        "join AbpUserAccounts as users\n" +
-                        "on users.UserId = expenses.CreatorUserId\n" +
-                        "WHERE users.UserName = 'walmart' and expenses.DeletionTime is NULL\n" +
-                        "ORDER by expenses.Name ASC;";
+                "join AbpUserAccounts as users\n" +
+                "on users.UserId = expenses.CreatorUserId\n" +
+                "WHERE users.UserName = 'walmart' and expenses.DeletionTime is NULL\n" +
+                "ORDER by expenses.Name ASC;";
 
         List<Map<String, Object>> dataFromDB = DBUtility.executeSQLQuery(query);
         int countFromUI;
@@ -155,7 +154,7 @@ public class MBExpensesPageSteps {
                 switch (expenseColumnValue) {
                     case "Expense name":
                         String expectedDataFromDB = data.get("Name").toString().trim();
-                        String actualDataFromUI = driver.findElement(By.xpath("//table[@id='expenses-table']/tbody/tr["+i+"]/td[2]")).getText().trim();
+                        String actualDataFromUI = driver.findElement(By.xpath("//table[@id='expenses-table']/tbody/tr[" + i + "]/td[2]")).getText().trim();
                         Assert.assertEquals("Data verification failed!", expectedDataFromDB, actualDataFromUI);
                         break;
                     case "Amount":
