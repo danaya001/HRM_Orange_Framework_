@@ -12,7 +12,7 @@ Feature: This feature file validates Login Page Functionality
   @negative
   Scenario Outline: User should not be able to login to HRM with invalid credentials
     When user enters "<username>" username and "<password>" password and clicks on login button
-    And user validates "<errorMessage>" error message
+    But user validates "<errorMessage>" error message
     Examples:
       | username | password | errorMessage             |
       | xyz      | abc      | Invalid credentials      |

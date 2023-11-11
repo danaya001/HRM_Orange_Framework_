@@ -16,10 +16,6 @@ import static org.junit.Assert.assertTrue;
 
 public class Helper {
 
-
-
-
-
     public static void hover(WebElement element) {
         Actions actions = new Actions(Driver.getInstance().getDriver());
         actions.moveToElement(element).perform();
@@ -74,17 +70,6 @@ public class Helper {
         return select.getFirstSelectedOption();
     }
 
-    public static void clickWithJS(WebElement element) {
-        ((JavascriptExecutor) Driver.getInstance().getDriver()).executeScript("arguments[0].scrollIntoView(true);", element);
-        ((JavascriptExecutor) Driver.getInstance().getDriver()).executeScript("arguments[0].click();", element);
-    }
-
-
-    public void scrollToElement(WebElement element) {
-        ((JavascriptExecutor) Driver.getInstance().getDriver()).executeScript("arguments[0].scrollIntoView(true);", element);
-    }
-
-
     public void doubleClick(WebElement element) {
         new Actions(Driver.getInstance().getDriver()).doubleClick(element).build().perform();
     }
@@ -120,6 +105,16 @@ public class Helper {
     public void jSClick(WebElement element){
         JavascriptExecutor jse = (JavascriptExecutor)Driver.getInstance().getDriver();
         jse.executeScript("arguments[0].click();", element);
+    }
+
+    public static void clickWithJS(WebElement element) {
+        ((JavascriptExecutor) Driver.getInstance().getDriver()).executeScript("arguments[0].scrollIntoView(true);", element);
+        ((JavascriptExecutor) Driver.getInstance().getDriver()).executeScript("arguments[0].click();", element);
+    }
+
+
+    public void scrollToElement(WebElement element) {
+        ((JavascriptExecutor) Driver.getInstance().getDriver()).executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
 }

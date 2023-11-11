@@ -5,6 +5,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import ui_automation.pages.LoginPage;
+import ui_automation.utilities.ConfigurationReader;
 import ui_automation.utilities.Driver;
 
 public class LoginPageSteps {
@@ -13,11 +14,13 @@ public class LoginPageSteps {
 
     @Given("user navigates to HRM Login Page")
     public void user_navigates_to_HRM_Login_Page() {
-        driver.get("http://dev-hrm.yoll.io/index.php/auth/login");
+        String url = ConfigurationReader.getProperty("ui-config.properties", "yollhrm.url");
+        driver.get(url);
     }
 
     @When("user enters {string} username and {string} password and clicks on login button")
     public void user_enters_username_and_password_and_clicks_on_login_button(String username, String password) {
+        //TODO HW: get valid credentials from config properties file
         loginPage.login(username, password);
     }
 

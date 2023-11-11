@@ -37,6 +37,12 @@ public class HomePage {
     @FindBy(xpath = "//*[@class='menu']/ul/li")
     public List<WebElement> allMainTabs;
 
+    @FindBy(id = "menu_admin_UserManagement")
+    public WebElement userManagementSubtab;
+
+    @FindBy(id = "menu_admin_viewSystemUsers")
+    public WebElement usersOption;
+
     public void verifyUsernameHeader (String expectedUsernameHeader) {
         String actualUsernameHeader = usernameHeader.getText();
         Assert.assertEquals("Username header verification failed!",
