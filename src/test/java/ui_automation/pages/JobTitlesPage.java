@@ -18,28 +18,28 @@ public class JobTitlesPage {
     }
 
     @FindBy(xpath = "//*[@class='head']/h1")
-    WebElement jobTitlesHeader;
+    public WebElement jobTitlesHeader;
 
     @FindBy(id = "btnAdd")
-    WebElement addButton;
+    public WebElement addButton;
 
     @FindBy(id = "btnDelete")
-    WebElement deleteButton;
+    public WebElement deleteButton;
 
     @FindBy(id = "jobTitle_jobTitle")
-    WebElement jobTitleTextBox;
+    public WebElement jobTitleTextBox;
 
     @FindBy(id = "jobTitle_jobDescription")
-    WebElement jobDescriptionTextBox;
+    public WebElement jobDescriptionTextBox;
 
     @FindBy(id = "btnSave")
-    WebElement saveButton;
+    public WebElement saveButton;
 
     @FindBy(id = "dialogDeleteBtn")
-    WebElement modalWindowOKButton;
+    public WebElement modalWindowOKButton;
 
     @FindBy(xpath = "//table[@id='resultTable']/tbody/tr/td[2]/a")
-    List<WebElement> allJobTitles;
+    public List<WebElement> allJobTitles;
 
     public void validatePageHeader () {
         String expectedPageHeader = "Job Titles";

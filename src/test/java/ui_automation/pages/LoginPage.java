@@ -5,6 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import ui_automation.utilities.WaitHelper;
 
 public class LoginPage {
     WebDriver driver;
@@ -27,8 +31,11 @@ public class LoginPage {
     public WebElement errorMessage;
 
     public void login (String username, String password) {
+        WaitHelper.waitUntilClickable(usernameTextInput, 10);
         usernameTextInput.sendKeys(username);
+        WaitHelper.waitUntilClickable(passwordTextInput, 10);
         passwordTextInput.sendKeys(password);
+        WaitHelper.waitUntilClickable(loginButton, 10);
         loginButton.click();
     }
 

@@ -16,7 +16,7 @@ public class FileUtility {
      * @param filePath The path of the file to check.
      * @return true if the file exists, false otherwise.
      */
-    public static boolean fileExists(String filePath) {
+    public static boolean isFileExists(String filePath) {
         File file = new File(filePath);
         logger.info("Check if the file exist in directory: "+filePath);
         return file.exists();

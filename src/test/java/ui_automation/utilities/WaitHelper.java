@@ -4,10 +4,7 @@ import com.google.common.base.Function;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.*;
 
 import java.time.Duration;
 
@@ -22,6 +19,11 @@ public class WaitHelper {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void waitUntilClickable (WebElement element, int timeToWaitInSec) {
+        Wait wait = new WebDriverWait(Driver.getInstance().getDriver(), timeToWaitInSec);
+        wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
     public static WebElement waitForVisibility(WebElement element, int timeToWaitInSec) {

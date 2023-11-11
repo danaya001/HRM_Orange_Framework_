@@ -34,7 +34,7 @@ public class DBUtility {
 
         while(resultSet.next()){
             Map<String, Object> map = new HashMap<>();
-            for(int column =1; column<=columnCount; column++){
+            for(int column = 1; column<=columnCount; column++){
                 map.put(metaData.getColumnName(column), resultSet.getObject(column));
             }
             table.add(map);
