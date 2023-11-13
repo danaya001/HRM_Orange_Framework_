@@ -10,7 +10,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import ui_automation.pages.MBExpensesPage;
 import ui_automation.utilities.*;
-
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
@@ -77,7 +76,7 @@ public class MBExpensesPageSteps {
         /* complete mandatory fields */
         mbExpensesPage.dateField.click();
         Thread.sleep(1000);
-        driver.findElement(By.xpath("(//*[@aria-label='"+todaysDate+"'])[3]")).click();
+        driver.findElement(By.xpath("(//*[@aria-label='" + todaysDate + "'])[3]")).click();
         mbExpensesPage.amountTextBox.sendKeys(String.valueOf(amount));
         mbExpensesPage.expenseNameTextBox.sendKeys(expenseName);
     }
@@ -105,7 +104,6 @@ public class MBExpensesPageSteps {
         Assert.assertTrue("New Expense validation failed!", isNewExpenseDisplayed);
     }
 
-
     @And("user validates UI expenses with DB expenses")
     public void userValidatesUIExpensesWithDBExpenses() throws InterruptedException, SQLException {
         Thread.sleep(5000);
@@ -113,11 +111,11 @@ public class MBExpensesPageSteps {
         DBUtility.openConnection();
 
         /* establish the statement and execute the query */
-        String query = "SELECT Name from Expenses as expenses\n" +
-                        "join AbpUserAccounts as users\n" +
-                        "on users.UserId = expenses.CreatorUserId\n" +
-                        "WHERE users.UserName = 'walmart' and expenses.DeletionTime is NULL\n" +
-                        "ORDER by expenses.Name ASC;";
+        String query = "SELECT Name, Amount, BusinessPurpose, ProjectName from Expenses as expenses\n" +
+                "join AbpUserAccounts as users\n" +
+                "on users.UserId = expenses.CreatorUserId\n" +
+                "WHERE users.UserName = 'walmart' and expenses.DeletionTime is NULL\n" +
+                "ORDER by expenses.Name ASC;";
 
         List<Map<String, Object>> dataFromDB = DBUtility.executeSQLQuery(query);
         int countFromUI;
@@ -135,13 +133,41 @@ public class MBExpensesPageSteps {
 
         /* validate DB expenses with UI expenses one by one */
         Thread.sleep(3000);
-        int i = 0;
-        List<WebElement> allExpenses = driver.findElements(By.xpath("//table[@id='expenses-table']/tbody/tr/td[2]"));
+        int i = 1;
+
+        /* verification with only one column */
+//        List<WebElement> allExpenses = driver.findElements(By.xpath("//table[@id='expenses-table']/tbody/tr/td[2]"));
+//
+//        for (Map<String, Object> data : dataFromDB) {
+//            String expectedDataFromDB = data.get("Name").toString();
+//            String actualDataFromUI = allExpenses.get(i).getText();
+//            Assert.assertEquals("Data verification failed!", expectedDataFromDB, actualDataFromUI);
+//            i++;
+//        }
+
+        /* verification with multiple columns */
+        List<WebElement> expenseColumns = driver.findElements(By.xpath("//table[@id='expenses-table']/thead//th"));
 
         for (Map<String, Object> data : dataFromDB) {
-            String expectedDataFromDB = data.get("Name").toString();
-            String actualDataFromUI = allExpenses.get(i).getText();
-            Assert.assertEquals("Data verification failed!", expectedDataFromDB, actualDataFromUI);
+            for (WebElement expenseColumn : expenseColumns) {
+                String expenseColumnValue = expenseColumn.getText();
+                switch (expenseColumnValue) {
+                    case "Expense name":
+                        String expectedDataFromDB = data.get("Name").toString().trim();
+                        String actualDataFromUI = driver.findElement(By.xpath("//table[@id='expenses-table']/tbody/tr[" + i + "]/td[2]")).getText().trim();
+                        Assert.assertEquals("Data verification failed!", expectedDataFromDB, actualDataFromUI);
+                        break;
+                    case "Amount":
+
+                        break;
+                    case "Business purpose":
+
+                        break;
+                    case "Project name":
+
+                        break;
+                }
+            }
             i++;
         }
     }
