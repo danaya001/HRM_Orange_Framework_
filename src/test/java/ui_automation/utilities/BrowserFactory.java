@@ -70,7 +70,7 @@ public class BrowserFactory {
                             case "firefoxRemote":
                                 FirefoxOptions firOptions = new FirefoxOptions();
                                 try {
-                                    driver = new RemoteWebDriver(new URL("http://54.166.134.32:4444/wd/hub"), firOptions);
+                                    driver = new RemoteWebDriver(new URL("http://52.90.116.110:4444/wd/hub"), firOptions);
                                 } catch (MalformedURLException e) {
                                     e.printStackTrace();
                                 }
