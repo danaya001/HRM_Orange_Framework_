@@ -1,5 +1,6 @@
 package ui_automation.step_definitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -164,5 +165,48 @@ public class ActionsSteps {
         String actualAttributeValueAfterHoverOver = actionsPage.yourAgeTextBox.getAttribute("title");
         Assert.assertEquals("Title attribute value after hover over verification failed!",
                 expectedAttributeValueAfterHoverOver, actualAttributeValueAfterHoverOver);
+    }
+
+    @Then("user hovers over Admin tab on Configuration Homepage")
+    public void userHoversOverAdminTabOnConfigurationHomepage() throws InterruptedException {
+        Thread.sleep(3000);
+        actions.moveToElement(homePage.ConfigurationSubTab).perform();
+    }
+
+    @Then("user hovers over Optional Fields subtab on HRM Homepage")
+    public void userHoversOverOptionalFieldsSubtabOnHRMHomepage() throws InterruptedException {
+        Thread.sleep(3000);
+        actions.moveToElement(homePage.optionalFieldsOption).perform();
+    }
+
+    @And("user clicks on Optional Fields option on HRM Homepage")
+    public void userClicksOnOptionalFieldsOptionOnHRMHomepage() throws InterruptedException {
+        Thread.sleep(3000);
+        Helper.clickWithJS(homePage.optionalFieldsOption);
+    }
+
+    @Given("user navigates to Demoqa Page")
+    public void userNavigatesToDemoqaPage() {
+        String url = ConfigurationReader.getProperty("ui-config.properties", "tooltipDemoqa.url");
+        driver.get(url);
+    }
+
+    @Then("user validates tooltip on Demoqa Page")
+    public void userValidatesTooltipOnDemoqaPage() throws InterruptedException {
+        /* locate the iframe and switch the control to it */
+        Thread.sleep(2000);
+
+
+        Assert.assertEquals("Title attribute value before hover over verification failed!",
+                actionsPage.hoveredOverField.isDisplayed());//false
+
+        /* hover over text box */
+        Thread.sleep(2000);
+        actions.moveToElement(actionsPage.hoverTextBox).perform();
+
+        /* get 'title' attribute value after hover over */
+        Thread.sleep(5000);
+        Assert.assertEquals("Title attribute value after hover over verification failed!",
+                true, actionsPage.hoveredOverField.isDisplayed());
     }
 }

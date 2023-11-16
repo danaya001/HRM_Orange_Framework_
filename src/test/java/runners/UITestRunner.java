@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         plugin = {"pretty","html:target/cucumber", "json:target/cucumber.json"},
         features="src/test/resources/uiFeatures",
         glue="ui_automation.step_definitions",
-        tags="@run",
+        tags="@smoke",
         dryRun = false,
         monochrome = false
 )

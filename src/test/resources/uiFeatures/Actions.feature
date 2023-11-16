@@ -31,3 +31,15 @@ Feature: This feature file validates Actions Functionality
   Scenario: User should be able to verify tooltip on JQuery Page
     Given user navigates to JQuery Page
     Then user validates tooltip on JQuery Page
+@hw1
+  Scenario: User should be able to hover over PIM tab on HRM Homepage
+    Given user navigates to HRM Login Page
+    When user enters "yoll-student" username and "Bootcamp5#" password and clicks on login button
+    Then user hovers over PIM tab on HRM Homepage
+    Then user hovers over Admin tab on Configuration Homepage
+    Then user hovers over Optional Fields subtab on HRM Homepage
+    And user clicks on Optional Fields option on HRM Homepage
+@tooltip
+  Scenario: User should be able to verify tooltip on Demoqa Page
+    Given user navigates to Demoqa Page
+    Then user validates tooltip on Demoqa Page

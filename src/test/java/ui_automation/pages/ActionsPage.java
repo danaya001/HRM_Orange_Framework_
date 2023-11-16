@@ -41,5 +41,9 @@ public class ActionsPage {
     @FindBy(id = "age")
     public WebElement yourAgeTextBox;
 
+    @FindBy(id = "toolTipTextField")
+    public WebElement hoverTextBox;
 
+    @FindBy(xpath = "//*[aria-describedby='textFieldToolTip']")
+    public WebElement hoveredOverField;
 }

@@ -43,6 +43,12 @@ public class HomePage {
     @FindBy(id = "menu_admin_viewSystemUsers")
     public WebElement usersOption;
 
+    @FindBy(id = "menu_pim_Configuration")
+    public WebElement ConfigurationSubTab;
+
+    @FindBy(xpath = "//*[text()='Optional Fields']")
+    public WebElement optionalFieldsOption;
+
     public void verifyUsernameHeader (String expectedUsernameHeader) {
         String actualUsernameHeader = usernameHeader.getText();
         Assert.assertEquals("Username header verification failed!",
