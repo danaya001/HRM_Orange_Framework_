@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features="src/test/resources/uiFeatures",
         glue="ui_automation.step_definitions",
         tags="@smoke",
-        dryRun = false,
+        dryRun = true,
         monochrome = false
 )
 

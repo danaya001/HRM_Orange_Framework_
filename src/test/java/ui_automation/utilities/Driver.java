@@ -9,7 +9,7 @@ public class Driver {
     }
 
     /* private static reference variable to the class */
-    private static Driver instance=new Driver();
+    private static Driver instance = new Driver();
 
     /* create a getter method with return type of the class => encapsulation */
     public static Driver getInstance(){

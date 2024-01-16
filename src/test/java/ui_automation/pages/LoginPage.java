@@ -18,16 +18,20 @@ public class LoginPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(id = "txtUsername")
+    @FindBy(name = "username")
     public WebElement usernameTextInput;
 
-    @FindBy(id = "txtPassword")
+    @FindBy(name = "password")
     public WebElement passwordTextInput;
 
-    @FindBy(xpath = "//*[@id='btnLogin']")
+    @FindBy(css = "button[type='submit']")
     public WebElement loginButton;
 
-    @FindBy(id = "spanMessage")
+    @FindBy(xpath = "//h6[text()='Dashboard']")
+    public WebElement dashboardTitle;
+
+
+    @FindBy(xpath = "//p[text()='Invalid credentials']")
     public WebElement errorMessage;
 
     public void login (String username, String password) {

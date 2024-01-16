@@ -6,8 +6,8 @@ Feature: This feature file validates Login Page Functionality
 
   @smoke
   Scenario: User should be able to login to HRM with valid credentials
-    When user enters "yoll-student" username and "Bootcamp5#" password and clicks on login button
-    And user should be able to verify account name header "Welcome Yoll" on HRM Homepage
+    When user enters "Admin" username and "admin123" password and clicks on login button
+    And user should be able to verify that he landed to the Dashboard on HRM Homepage
 
   @negative
   Scenario Outline: User should not be able to login to HRM with invalid credentials

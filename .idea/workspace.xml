@@ -4,19 +4,79 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f04e7b69-5492-4228-97be-fd2f33f5cfd4" name="Changes" comment="added smoke tag to home page scenario">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="f04e7b69-5492-4228-97be-fd2f33f5cfd4" name="Changes" comment="added framework changes">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testData/testData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testData/testData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/uiFeatures/Actions.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/uiFeatures/Actions.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/application.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/application.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/testlog.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/testlog.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/testlog1.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/testlog1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_automation/stepDefinition/GetWeatherByCityName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_automation/stepDefinition/GorestAPIPOST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/UITestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/UITestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_automation/pages/ActionsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_automation/pages/AlertPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_automation/pages/FileUploadDownloadPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_automation/pages/HomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_automation/pages/JobTitlesPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_automation/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_automation/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_automation/pages/MBExpensesPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_automation/pages/WindowsTabsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_automation/pages/iFramesPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_automation/step_definitions/ActionsSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_automation/step_definitions/AlertPageSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_automation/step_definitions/FileUploadDownloadSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_automation/step_definitions/HomePageSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_automation/step_definitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_automation/step_definitions/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_automation/step_definitions/JobTitlesPageSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_automation/step_definitions/LoginPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_automation/step_definitions/LoginPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_automation/step_definitions/MBExpensesPageSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_automation/step_definitions/WindowsTabsPageSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_automation/step_definitions/iFramesPageSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui_automation/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui_automation/utilities/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testData/BrandNew.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testData/Cohort10Titans.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testData/Taco-PNG-Photo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testData/demo.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testData/person.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testData/testData.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/ui-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/ui-config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/uiFeatures/Actions.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/uiFeatures/AlertPage.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/uiFeatures/FileUploadDownload.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/uiFeatures/HomePage.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/uiFeatures/JobTitles.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/uiFeatures/LoginPage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/uiFeatures/LoginPage.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/uiFeatures/MBExpenses.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/uiFeatures/WindowsTabs.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/uiFeatures/iFrames.feature" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="4918a178-37d8-49ae-bf17-86525fba8343" />
+        <option name="url" value="https://github.com/yollinfo/YFrameworkFinalC12.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -39,19 +99,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/orkar/IdeaProjects/YFrameworkFinalC12",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Maga/IdeaProjects/Dana/HRM_Orange_Framework&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Maga\IdeaProjects\Dana\YFrameworkFinalC12\src\test\resources\testData" />
+      <recent name="C:\Users\Maga\IdeaProjects\Dana\YFrameworkFinalC12\src\test\resources\testData\Downloads" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="UITestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="YFrameworkFinalC12" />
@@ -91,11 +157,31 @@
       <option name="project" value="LOCAL" />
       <updated>1699720533600</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added framework changes">
+      <option name="closed" value="true" />
+      <created>1700094064517</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700094064517</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added smoke tag to home page scenario" />
-    <option name="LAST_COMMIT_MESSAGE" value="added smoke tag to home page scenario" />
+    <MESSAGE value="added framework changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added framework changes" />
   </component>
 </project>

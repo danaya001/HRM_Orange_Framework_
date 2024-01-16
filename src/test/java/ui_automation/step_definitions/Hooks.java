@@ -22,6 +22,7 @@ public class Hooks {
         driver=Driver.getInstance().getDriver();
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
         driver.manage().window().maximize();
 //        String directoryPath = System.getProperty("user.dir")+"/src/test/resources/testData/Downloads";
 //        FileUtility.deleteFilesInDirectory(directoryPath);
